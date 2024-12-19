@@ -12,3 +12,6 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+.page-container {
+  background: linear-gradient(to right bottom, blue, white);
+}

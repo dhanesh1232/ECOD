@@ -1,3 +1,8 @@
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+}
 * {
   padding: 0;
   margin: 0;
@@ -11,7 +16,22 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  user-select: none;
+}
+.page-container::-webkit-scrollbar {
+  background: transparent;
+  width: 0px;
+}
+
+.page-container::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0);
+  border-radius: 0px;
 }
 .page-container {
-  background: linear-gradient(to right bottom, blue, white);
+  overflow-y: auto;
+  background: linear-gradient(to right bottom, blue 45%, white);
+}
+
+.body-container {
+  height: 85%;
 }
